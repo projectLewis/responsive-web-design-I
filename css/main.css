@@ -69,15 +69,22 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 nav {
+	max-width: 100%;
 	margin: 0;
 	padding: 20px 0px 0px 0px;
 	display: flex;
+	/* align-items: center; */
+	/* justify-content: space-between; */
+}
+.subnav {
+	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 nav a {
 	text-decoration: none;
 	color: lightgray;
+	padding: 0 30px;
 }
 nav .logo {
 	padding: 0px 0px 0px 0px;

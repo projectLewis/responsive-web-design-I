@@ -75,16 +75,22 @@ nav {
 	font-size: 1.6rem;
 	margin: 0;
 	padding: 20px 0px 0px 0px;
+	/* display: flex; */
+}
+.subnav {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 nav a {
 	text-decoration: none;
 	color: lightgray;
 }
 nav .logo {
-	padding: 0px 0px 0px 0px;
+	display: flex;
+	align-self: flex-start;
+	/* padding: 0px 0px 0px 0px; */
+	order: -1;
 }
  .service-statement, .index {
 	vertical-align: middle;
@@ -96,7 +102,7 @@ main h1 {
 	font-size: 7.0rem;
 	text-align: center;
     margin: 0px auto;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 main h1 button {
@@ -160,8 +166,9 @@ main img {
 	padding: 10px 0px 10px 0px;
 }
 .middle-img {
-	margin: 18px 0px 18px 0px;
-	padding: 10px 0px;
+	max-width: 100%;
+	margin: 1px 0px 1px 0px;
+	padding: 0px 0px;
 }
 /* #text-below-img {
 	padding: 10px 20px 10px 10px;
