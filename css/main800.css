@@ -73,24 +73,28 @@ h1, h2, h3, h4, h5 {
 
 nav {
 	font-size: 1.6rem;
-	margin: 0;
+	margin: 0px;
 	padding: 20px 0px 0px 0px;
-	/* display: flex; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 .subnav {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
+	/* justify-content: flex-start; */
+	order: 2;
 }
 nav a {
+	justify-content: flex-start;
+	/* padding: 0px; */
 	text-decoration: none;
 	color: lightgray;
 }
 nav .logo {
-	display: flex;
-	align-self: flex-start;
-	/* padding: 0px 0px 0px 0px; */
-	order: -1;
+	padding-top: 8px;
+	justify-content: center;
+	padding-bottom: 40px;
 }
  .service-statement, .index {
 	vertical-align: middle;
@@ -102,7 +106,7 @@ main h1 {
 	font-size: 7.0rem;
 	text-align: center;
     margin: 0px auto;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 main h1 button {
@@ -156,11 +160,17 @@ main img {
 }
 #text-above-img, #text-below-img {
 	font-size: 1.6rem;
-	padding: 10px 0px 10px 0px;
+	padding: 17px 0px 10px 0px;
 	display: flex;
 }
 #text-above-img p, #text-below-img p {
-	padding-right: 15px
+	padding-top: 5px;
+	padding-right: 20px
+}
+.left p {
+	padding-bottom: 15px;
+	padding-right: 10px;
+	margin-right: 30px;
 }
 .middle-img, .services-header-img {
 	padding: 10px 0px 10px 0px;
@@ -168,7 +178,7 @@ main img {
 .middle-img {
 	max-width: 100%;
 	margin: 1px 0px 1px 0px;
-	padding: 0px 0px;
+	padding-bottom: 10px;
 }
 /* #text-below-img {
 	padding: 10px 20px 10px 10px;
@@ -220,8 +230,8 @@ main img {
 hr {
 	display: block;
 	position: relative;
-	margin: 18px 0px 18px 0px;
-	padding: 10px 0px;
+	margin: 8px 0px 18px 0px;
+	padding: 4px 0px;
 	height: 0;
 	width: 100%;
 	max-height: 0;
