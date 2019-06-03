@@ -68,9 +68,11 @@ h1, h2, h3, h4, h5 {
 html {
     font-size: 62.5%;
 }
-
+h3 {
+    font-size: 1.6rem;
+}
 #viewSettings {
-    max-width: 900px;
+    max-width:877px;
     margin: 0 auto;
 }
 
@@ -83,4 +85,59 @@ nav {
 nav a {
     text-decoration: none;
     color: gray;
+}
+.index {
+    padding-top: 6.0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+    padding-bottom: 6.0rem;
+}
+.index h1 {
+    font-size: 7.0rem;
+    text-align: center;
+    align-self: center;
+    /* margin: 0px auto; */
+}
+
+.index h1 p {
+    margin-bottom: -9.5rem;
+}
+
+.index button {
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 0.5rem 3.2rem;
+    border: 0.1rem solid black;
+    /* padding-top: 0; */
+}
+.index button:hover {
+    font-size: 2.4rem;
+	background-color: f8f8ff;
+	padding: 5px 40px;
+	border: 2px outset black;
+}
+
+#text-above-img, #text-below-img {
+    display: grid;
+    font-size: 1.6rem;
+    grid-gap: 1rem;
+    margin: 1.7rem 0 .8rem 0;
+}
+#text-above-img {
+    margin-top: 2.0rem;
+    grid-template-columns: 1fr 1fr;
+}
+#text-below-img {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2.0rem;
+}
+footer {
+    margin-top: 2.0rem;
+    font-size: 1.6rem;
+    max-width: 100%; 
+}
+footer p {
+    text-align: center;
+    margin-top: 5.0rem;
 }
