@@ -106,11 +106,10 @@ nav div hr {
     display: none;
 }
 .index {
-    padding-top: 6.0rem;
+    padding: 6.0rem 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: end;
-    padding-bottom: 6.0rem;
 }
 .index h1 {
     font-size: 7.0rem;
@@ -162,7 +161,14 @@ footer p {
     text-align: center;
     margin-top: 5.0rem;
 }
-
+footer address a {
+    text-decoration: none;
+    color: black;
+}
+footer address a:hover {
+    text-decoration: underline;
+    color: blue;
+}
 /* ##TABLET Below Here */
 @media only screen and (max-width: 800px) {
     #viewSettings {
@@ -200,6 +206,7 @@ footer p {
         padding: 0 2.0rem;
     }
     .index {
+        padding: 3.0rem 0;
         justify-items: center;
         grid-template-columns: 1fr;
     }
@@ -258,5 +265,21 @@ footer p {
         grid-row: 1;
         grid-column: 1/8;
     }
-
+    #text-above-img, #text-below-img {
+        display: grid;
+        font-size: 1.6rem;
+        grid-gap: 1rem;
+        margin: 1.7rem 0 .8rem 0;
+    }
+    #text-above-img div p, #text-below-img div p {
+        margin-bottom: 3.0rem;
+    }
+    #text-above-img {
+        margin-top: 2.0rem;
+        grid-template-columns: 1fr;
+    }
+    #text-below-img {
+        grid-template-columns: 1fr;
+        margin-bottom: 2.0rem;
+    }
 }
