@@ -172,15 +172,58 @@ footer address a:hover {
     text-decoration: underline;
     color: blue;
 }
+
+
 /* SERVICES PAGE */
 .services-header-img {
+    margin-top: 1.5rem;
     max-width: 100%;
+    margin-bottom: 2.0rem;
+}
+.service-statement {
+    padding-bottom: 3.0rem;
+    border-bottom: 0.1rem solid black;
+    margin-bottom: 3.0rem;
+}
+.service-statement p {
+    font-size: 1.4rem;
 }
 .service-statement h2 {
     text-align: left;
     margin: 0;
     padding: 0;
 }
+.service-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 0.2rem solid black;
+    grid-gap: 3rem;
+    padding-bottom: 3.0rem;
+    margin-bottom: 3.0rem;
+}
+.service-categories p {
+    font-size: 1.4rem;
+}
+.service-categories button {
+	font-size: 1.0rem;
+	background-color: white;
+	padding: 0.5rem 1.2rem;
+	margin-top: 1.0rem;
+	border: 0.1rem solid black;
+	border-radius: 0.5rem;
+}
+.service-cat-child1, .service-cat-child2, .service-cat-child3, .service-cat-child4, .service-cat-child5, .service-cat-child6 {
+    border: 1px solid black;
+    background-color: rgb(243, 241, 241);
+    padding: 1.5rem;
+}
+
+
+
+
+
+
+/* VIEWPORT SPECIFIC CODE BELOW */
 
 /* ## TABLET view below here */
 @media (max-width: 800px) {
@@ -234,6 +277,7 @@ footer address a:hover {
         grid-column: 6;
     }
 }
+
 
 /* ## MOBILE view below here */
 @media (max-width: 500px) {
