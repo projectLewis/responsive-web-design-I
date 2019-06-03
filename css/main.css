@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+#viewSettings {
+	max-width: 900px;
+	margin: 0 auto;
+}
+nav {
+	max-width: 100%;
+	margin: 0;
+	padding: 20px 0px 0px 0px;
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: space-between; */
+}
+.subnav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+nav a {
+	text-decoration: none;
+	color: lightgray;
+	padding: 0 30px;
+}
+nav .logo {
+	padding: 0px 0px 0px 0px;
+}
+ .service-statement, .index {
+	vertical-align: middle;
+	margin: 50px 0px 30px 0px;
+	padding: 0px 0px 30px 0px;
+	display: flex;
+}
+main h1 {
+	font-size: 70px;
+	text-align: center;
+    margin: 0px auto;
+    padding-top: 60px;
+}
+
+main h1 button {
+	font-size: 16px;
+	background-color: white;
+	padding: 5px 32px;
+	border: 1px solid black;
+}
+
+main h1 button:hover {
+	font-size: 24px;
+	background-color: lightgray;
+	padding: 5px 40px;
+	border: 2px outset black;
+}
+.service-statement {
+	margin: 0px 0px;
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.product-statement {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.product-statement img {
+	opacity: .7;
+}
+.product-statement h2 {
+	font-size: 70px;
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+}
+main h2 {
+	font-size: 30px;
+	text-align: left;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+.product-header-img {
+	padding: 10px 0px 10px 0px;
+}
+main img {
+	margin: 0px auto;
+}
+#text-above-img {
+	padding: 10px 0px 10px 0px;
+	display: flex;
+}
+.middle-img, .services-header-img {
+	padding: 10px 0px 10px 0px;
+}
+#text-below-img {
+	padding: 10px 20px 10px 10px;
+	display: flex;
+}
+.service-categories, .additional-facts {
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+.service-cat-child, .product-cat-child {
+	padding-top: 10px;
+	margin-bottom: 30px;
+	border: 1px solid black;
+	height: 180px;
+	width: 380px;
+	background-color: rgb(243, 241, 241);
+}
+.service-cat-child button, .service-cat-child h3, .service-cat-child p {
+	margin-left: 20px;
+}
+.service-cat-child button {
+	font-size: 10px;
+	background-color: white;
+	padding: 5px 12px;
+	margin-top: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.additional-facts-child {
+	height: 300px;
+	width: 420px;
+}
+.additional-facts-child p {
+	padding-right: 10px;
+}
+.product-categories {
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+}
+.product-cat-child button, .product-cat-child h3, .product-cat-child p {
+	margin-left: 20px;
+}
+hr {
+	display: block;
+	position: relative;
+	margin: 18px 0px 18px 0px;
+	padding: 10px 0px;
+	height: 0;
+	width: 100%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+	border: none;
+	border-top: 0px solid #aaaaaa;
+	border-bottom: 1px solid #000000;
+ }
+ .services-hr {
+	display: block;
+	position: relative;
+	margin: 0px 0px 18px 0px;
+	padding: 10px 0px;
+	height: 0;
+	width: 100%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+	border: none;
+	border-top: 0px solid #aaaaaa;
+	border-bottom: 1px solid #000000;
+ }
+ .services-hr2 {
+	display: block;
+	position: relative;
+	margin: 0px 0px 33px 0px;
+	padding: 0px 0px;
+	height: 0;
+	width: 100%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+	border: none;
+	border-top: 0px solid #aaaaaa;
+	border-bottom: 2px solid #000000;
+ }
+.interesting-stuff li {
+	list-style-type: square;
+	margin-left: 15px;
+}
+footer {
+	padding: 20px 0px 10px 0px;
+}
+footer h2 {
+	padding: 0px 0px;
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+footer a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+.copyright {
+	margin-top: 50px;
+	text-align: center;
+}

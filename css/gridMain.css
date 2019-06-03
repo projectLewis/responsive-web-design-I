@@ -1,0 +1,485 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* my code below */
+/* 62.5% for easy rem unit coversion */
+html {
+    font-size: 62.5%;
+}
+h2 {
+	font-size: 3.0rem;
+}
+h3 {
+    font-size: 1.6rem;
+}
+h4 {
+    font-size: 1.4rem;
+}
+hr {
+	display: block;
+	position: relative;
+	margin: 8px 0px 18px 0px;
+	padding: 4px 0px;
+	height: 0;
+	width: 100%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+	border: none;
+	border-top: 0px solid #aaaaaa;
+    border-bottom: 2px solid #000000;
+}
+#viewSettings {
+    max-width:877px;
+    margin: 0 auto;
+    padding: 0 3.5rem;
+}
+
+nav {
+    padding-top: 3.0rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+    font-size: 1.6rem;
+}
+nav a {
+    text-decoration: none;
+    color: gray;
+}
+nav div hr {
+    display: none;
+}
+.index {
+    padding: 6.0rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+}
+.index h1 {
+    font-size: 7.0rem;
+    text-align: center;
+    align-self: center;
+    /* margin: 0px auto; */
+}
+
+.index h1 p {
+    font-size: inherit;
+    margin-bottom: -9.5rem;
+}
+
+.index button {
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 0.5rem 3.2rem;
+    border: 0.1rem solid black;
+}
+.index button:hover {
+    font-size: 2.4rem;
+	background-color: f8f8ff;
+	padding: 5px 40px;
+	border: 2px outset black;
+}
+.middle-img {
+    max-width: 100%;
+}
+#text-above-img, #text-below-img {
+    display: grid;
+    font-size: 1.6rem;
+    grid-gap: 2.5rem;
+    margin: 1.7rem 0 .8rem 0;
+}
+#text-above-img {
+    margin-top: 2.0rem;
+    grid-template-columns: 1fr 1fr;
+}
+#text-below-img {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 2.0rem;
+}
+footer {
+    margin-top: 2.0rem;
+    font-size: 1.6rem;
+    max-width: 100%; 
+}
+.copyright {
+    text-align: center;
+    margin-top: 5.0rem;
+}
+footer address a {
+    text-decoration: none;
+    color: black;
+}
+footer address a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+/* SERVICES PAGE */
+p {
+    font-size: 1.4rem;
+}
+.services-header-img {
+    margin-top: 1.5rem;
+    max-width: 100%;
+    margin-bottom: 2.0rem;
+}
+.service-statement {
+    padding-bottom: 3.0rem;
+    border-bottom: 0.1rem solid black;
+    margin-bottom: 3.0rem;
+}
+.service-statement h2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.service-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 0.2rem solid black;
+    grid-gap: 3rem;
+    padding-bottom: 3.0rem;
+    margin-bottom: 3.0rem;
+}
+.service-categories button {
+	font-size: 1.0rem;
+	background-color: white;
+	padding: 0.5rem 1.2rem;
+	margin-top: 1.0rem;
+	border: 0.1rem solid black;
+	border-radius: 0.5rem;
+}
+.service-cat-child1, .service-cat-child2, .service-cat-child3, .service-cat-child4, .service-cat-child5, .service-cat-child6 {
+    border: 0.1rem solid black;
+    background-color: rgb(243, 241, 241);
+    padding: 1.5rem;
+}
+.additional-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+.interesting-stuff {
+    margin-top: 1.0rem;
+}
+.interesting-stuff li {
+	list-style-type: square;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+}
+.additional-facts-child2 img {
+    max-width: 100%;
+} 
+
+
+
+/* VIEWPORT SPECIFIC CODE BELOW */
+
+/* ## TABLET view below here */
+@media (max-width: 800px) {
+    #viewSettings {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2.0rem;
+    }
+    .index {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .index img {
+        display: none;
+        margin: 0px auto;
+    }
+    nav {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1rem;
+    }
+    nav .logo {
+        order: -1;
+        grid-row: 1;
+        grid-column: 1/7;
+        padding-bottom: 3.0rem;
+    }
+    .services {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .product {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .vision {
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .features {
+        grid-row: 2;
+        grid-column: 4;
+    }
+    .about {
+        grid-row: 2;
+        grid-column: 5;
+    }
+    .contact {
+        grid-row: 2;
+        grid-column: 6;
+    }
+}
+
+
+/* ## MOBILE view below here */
+@media (max-width: 500px) {
+    #viewSettings {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 0;
+    }
+    h3, footer {
+        font-size: 1.4rem;
+    }
+    .mission-statement {
+        padding: 0 2.0rem;
+    }
+    nav {
+        padding-top: 0rem;
+        display: grid;
+        /* font-size: 2.6rem; */
+        text-align: center;
+        grid-gap: 0;
+    }
+    nav .logo {
+        padding: 1.5rem 0;
+    }
+    .logo img {
+        width: 30%;
+    }
+
+    .hrBelowButton {
+        padding-top: 0;
+        margin-top:  -1.0rem;
+    }
+    .services {
+        grid-row: 2;
+        grid-column: 1/8;
+        border-bottom: 0.1rem solid gray;
+        padding: 1.5rem 0;
+    }
+    .product {
+        grid-row: 3;
+        grid-column: 1/8;
+        border-bottom: 0.1rem solid gray;
+        padding: 1.5rem 0;
+
+    }
+    .vision {
+        grid-row: 4;
+        grid-column: 1/8;
+        border-bottom: 0.1rem solid gray;
+        padding: 1.5rem 0;
+    }
+    .features {
+        grid-row: 5;
+        grid-column: 1/8;
+        border-bottom: 0.1rem solid gray;
+        padding: 1.5rem 0;
+    }
+    .about {
+        grid-row: 6;
+        grid-column: 1/8;
+        border-bottom: 0.1rem solid gray;
+        padding: 1.5rem 0;
+    }
+    .contact {
+        grid-row: 7;
+        grid-column: 1/8;
+        border-bottom: 0.1rem solid gray;
+        padding: 1.5rem 0;
+    }
+    .logo {
+        grid-row: 1;
+        grid-column: 1/8;
+        border-bottom: 0.1rem solid gray;
+        padding: 1.5rem 0;
+    }
+
+    .index {
+        padding: 4.5rem 0;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .index h1 {
+        font-size: 5.5rem;
+    }
+    .index img {
+        display: none;
+        margin: 0px auto;
+    }
+    .index button {
+        font-size: 1.0rem;
+        background-color: white;
+        padding: 0.5rem 3.2rem;
+        border: 0.1rem solid black;
+    }
+    .index h1 p {
+        margin-bottom: -5.5rem;
+    }
+    #text-above-img, #text-below-img {
+        display: grid;
+        font-size: 1.6rem;
+        grid-gap: 1rem;
+        margin: 1.7rem 0 .8rem 0;
+    }
+    #text-above-img div p, #text-below-img div p {
+        margin-bottom: 3.0rem;
+        font-size: 1.4rem;
+    }
+    #text-above-img {
+        margin-top: 2.0rem;
+        grid-template-columns: 1fr;
+    }
+    #text-above-img .paraFeatures {
+        margin-top: 2.0rem;
+    }
+    #text-below-img {
+        grid-template-columns: 1fr;
+        margin-bottom: 2.0rem;
+    }
+    #text-below-img .paraVision p {
+        margin-bottom: 0rem;
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 3.0rem;
+        margin-bottom: 2.0rem;
+    }
+
+    /* SERVICES Mobile page */
+    .service-statement, .service-categories, .service-additional-facts, .services-header-img {
+        padding: 0 2.0rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+    .services-header-img {
+        margin-top: 1.5rem;
+        max-width: 100%;
+        margin-bottom: 2.0rem;
+    }
+    .service-statement {
+        padding-bottom: 3.0rem;
+        border-bottom: 0.1rem solid black;
+        margin-bottom: 3.0rem;
+    }
+    .service-statement h2 {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+    .service-categories {
+        display: grid;
+        border-bottom: 0.2rem solid black;
+        grid-gap: 3rem;
+        padding-bottom: 3.0rem;
+        margin-bottom: 3.0rem;
+    }
+    .service-categories button {
+        font-size: 1.0rem;
+        background-color: white;
+        padding: 0.5rem 1.2rem;
+        margin-top: 1.0rem;
+        border: 0.1rem solid black;
+        border-radius: 0.5rem;
+    }
+    .service-cat-child1, .service-cat-child2, .service-cat-child3, .service-cat-child4, .service-cat-child5, .service-cat-child6 {
+        grid-column: 1/7;
+        background-color: rgb(243, 241, 241);
+        padding: 1.5rem;
+    }
+    .additional-facts {
+        display: grid;
+        grid-gap: 1.5rem;
+    }
+    .additional-facts-child1, .additional-facts-child2 {
+        grid-column: 1/3;
+        padding: 0 2.0rem;
+    }
+    .interesting-stuff {
+        margin-top: 1.0rem;
+    }
+    .interesting-stuff li {
+        list-style-type: square;
+        margin-left: 1.5rem;
+        padding-left: 0.5rem;
+        font-size: 1.4rem;
+    }
+    .additional-facts-child2 img {
+        max-width: 100%;
+    } 
+}
