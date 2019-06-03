@@ -126,6 +126,7 @@ nav div hr {
 }
 
 .index h1 p {
+    font-size: inherit;
     margin-bottom: -9.5rem;
 }
 
