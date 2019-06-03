@@ -236,27 +236,6 @@ footer address a:hover {
     .mission-statement {
         padding: 0 2.0rem;
     }
-    .index {
-        padding: 3.0rem 0;
-        justify-items: center;
-        grid-template-columns: 1fr;
-    }
-    .index h1 {
-        font-size: 5.0rem;
-    }
-    .index img {
-        display: none;
-        margin: 0px auto;
-    }
-    .index button {
-        font-size: 1.0rem;
-        background-color: white;
-        padding: 0.5rem 3.2rem;
-        border: 0.1rem solid black;
-    }
-    .index h1 p {
-        margin-bottom: -5.5rem;
-    }
     nav {
         padding-top: 0rem;
         display: grid;
@@ -270,23 +249,7 @@ footer address a:hover {
     .logo img {
         width: 30%;
     }
-    /* nav div hr {
-        display: block;
-        position: relative;
-        margin: 8px 0px;
-        padding: 8px 0px;
-        height: 0;
-        width: 100%;
-        max-height: 0;
-        font-size: 1px;
-        line-height: 0;
-        clear: both;
-        border: none;
-        border-top: 0px solid #aaaaaa;
-        border-bottom: 0.1rem solid gray;
-    } */
 
-    /* TODO create div bottom "hr" for navbar */
     .hrBelowButton {
         padding-top: 0;
         margin-top:  -1.0rem;
@@ -298,7 +261,6 @@ footer address a:hover {
         padding: 1.5rem 0;
     }
     .product {
-        /* align-self: center; */
         grid-row: 3;
         grid-column: 1/8;
         border-bottom: 0.1rem solid gray;
@@ -335,6 +297,28 @@ footer address a:hover {
         border-bottom: 0.1rem solid gray;
         padding: 1.5rem 0;
     }
+
+    .index {
+        padding: 4.5rem 0;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .index h1 {
+        font-size: 5.5rem;
+    }
+    .index img {
+        display: none;
+        margin: 0px auto;
+    }
+    .index button {
+        font-size: 1.0rem;
+        background-color: white;
+        padding: 0.5rem 3.2rem;
+        border: 0.1rem solid black;
+    }
+    .index h1 p {
+        margin-bottom: -5.5rem;
+    }
     #text-above-img, #text-below-img {
         display: grid;
         font-size: 1.6rem;
@@ -349,11 +333,14 @@ footer address a:hover {
         margin-top: 2.0rem;
         grid-template-columns: 1fr;
     }
+    #text-above-img .paraFeatures {
+        margin-top: 2.0rem;
+    }
     #text-below-img {
         grid-template-columns: 1fr;
         margin-bottom: 2.0rem;
     }
-    #text-below-img .right p {
+    #text-below-img .paraVision p {
         margin-bottom: 0rem;
     }
     .copyright {
