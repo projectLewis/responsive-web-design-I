@@ -68,6 +68,9 @@ h1, h2, h3, h4, h5 {
 html {
     font-size: 62.5%;
 }
+h2 {
+	font-size: 3.0rem;
+}
 h3 {
     font-size: 1.6rem;
 }
@@ -168,6 +171,15 @@ footer address a {
 footer address a:hover {
     text-decoration: underline;
     color: blue;
+}
+/* SERVICES PAGE */
+.services-header-img {
+    max-width: 100%;
+}
+.service-statement h2 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
 }
 
 /* ## TABLET view below here */
