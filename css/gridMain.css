@@ -117,7 +117,9 @@ nav a {
 	padding: 5px 40px;
 	border: 2px outset black;
 }
-
+.middle-img {
+    max-width: 100%;
+}
 #text-above-img, #text-below-img {
     display: grid;
     font-size: 1.6rem;
@@ -140,4 +142,33 @@ footer {
 footer p {
     text-align: center;
     margin-top: 5.0rem;
+}
+
+/* ##TABLET Below Here */
+@media only screen and (max-width: 800px) {
+    #viewSettings {
+        max-width: 800;
+        margin: 0 auto;
+        padding: 0 2.0rem;
+    }
+    .index {
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+    .index img {
+        display: none;
+        margin: 0px auto;
+    }
+    nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    nav .logo {
+        order: -1;
+        align-self: start;
+    }
+
+
+
 }
