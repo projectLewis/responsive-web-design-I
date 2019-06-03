@@ -86,11 +86,14 @@ nav {
 	order: 2;
 }
 nav a {
-	justify-content: flex-start;
-	/* padding: 0px; */
+	justify-content: space-evenly;
+	padding: 0px 15px;
 	text-decoration: none;
 	color: lightgray;
 }
+/* .subnav > a {
+	flex: 2;
+} */
 nav .logo {
 	padding-top: 8px;
 	justify-content: center;
