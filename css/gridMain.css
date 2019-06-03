@@ -74,6 +74,9 @@ h2 {
 h3 {
     font-size: 1.6rem;
 }
+h4 {
+    font-size: 1.4rem;
+}
 hr {
 	display: block;
 	position: relative;
@@ -175,6 +178,9 @@ footer address a:hover {
 
 
 /* SERVICES PAGE */
+p {
+    font-size: 1.4rem;
+}
 .services-header-img {
     margin-top: 1.5rem;
     max-width: 100%;
@@ -184,9 +190,6 @@ footer address a:hover {
     padding-bottom: 3.0rem;
     border-bottom: 0.1rem solid black;
     margin-bottom: 3.0rem;
-}
-.service-statement p {
-    font-size: 1.4rem;
 }
 .service-statement h2 {
     text-align: left;
@@ -201,9 +204,6 @@ footer address a:hover {
     padding-bottom: 3.0rem;
     margin-bottom: 3.0rem;
 }
-.service-categories p {
-    font-size: 1.4rem;
-}
 .service-categories button {
 	font-size: 1.0rem;
 	background-color: white;
@@ -213,10 +213,27 @@ footer address a:hover {
 	border-radius: 0.5rem;
 }
 .service-cat-child1, .service-cat-child2, .service-cat-child3, .service-cat-child4, .service-cat-child5, .service-cat-child6 {
-    border: 1px solid black;
+    border: 0.1rem solid black;
     background-color: rgb(243, 241, 241);
     padding: 1.5rem;
 }
+.additional-facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+.interesting-stuff {
+    margin-top: 1.0rem;
+}
+.interesting-stuff li {
+	list-style-type: square;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+}
+.additional-facts-child2 img {
+    max-width: 100%;
+} 
 
 
 
